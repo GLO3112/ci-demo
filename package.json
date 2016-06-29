@@ -6,7 +6,7 @@
   "scripts": {
     "typings": "typings install",
     "build": "gulp",
-    "start": "http-server",
+    "start": "node server.js",
     "test": "rm -rf dist_test && tsc -p tsconfig.test.json && nyc ava \"dist_test/**/*Test.js\"",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "bithound": "bithound check git@github.com:GLO3112/ci-demo.git"
@@ -31,6 +31,7 @@
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
+    "express": "^4.14.0",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   }

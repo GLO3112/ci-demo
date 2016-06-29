@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "typings install",
+    "build": "gulp",
     "test": "rm -rf dist_test && tsc -p tsconfig.test.json && nyc ava \"dist_test/**/*Test.js\"",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "jsx": "react",
+    "outDir": "dist_test",
+    "inlineSourceMap": true
+  },
+  "files": [
+    "./typings/index.d.ts",
+    "./test/components/HelloWorldTest.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

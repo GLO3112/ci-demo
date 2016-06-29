@@ -6,6 +6,7 @@
   "scripts": {
     "typings": "typings install",
     "build": "gulp",
+    "start": "http-server",
     "test": "rm -rf dist_test && tsc -p tsconfig.test.json && nyc ava \"dist_test/**/*Test.js\"",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "bithound": "bithound check git@github.com:GLO3112/ci-demo.git"

@@ -1,5 +1,5 @@
+[![Travis master](https://img.shields.io/travis/GLO3112/ci-demo/master.svg?maxAge=2592000&style=flat-square)]()
 [![Coveralls master](https://img.shields.io/coveralls/GLO3112/ci-demo/master.svg?style=flat-square&maxAge=2592000)]()
-[![Travis master](https://img.shields.io/travis/GLO3112/ci-demo/master.svg?maxAge=2592000?style=flat-square)]()
 
 # ci-demo
 

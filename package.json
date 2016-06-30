@@ -9,7 +9,8 @@
     "start": "node server.js",
     "test": "rm -rf dist_test && tsc -p tsconfig.test.json && nyc ava \"dist_test/**/*Test.js\"",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "bithound": "bithound check git@github.com:GLO3112/ci-demo.git"
+    "bithound": "bithound check git@github.com:GLO3112/ci-demo.git",
+    "heroku-postbuild": "npm run build"
   },
   "author": "wfortin & vseguin",
   "license": "MIT",
@@ -34,5 +35,21 @@
     "express": "^4.14.0",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "value": "false"
+    }
   }
 }

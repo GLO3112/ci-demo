@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "typings install",
+    "typings": "typings install",
     "build": "gulp",
     "start": "node server.js",
     "test": "rm -rf dist_test && tsc -p tsconfig.test.json && nyc ava \"dist_test/**/*Test.js\"",

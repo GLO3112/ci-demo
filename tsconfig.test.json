@@ -10,6 +10,8 @@
   },
   "files": [
     "./typings/index.d.ts",
+    "./src/components/HelloWorld.tsx",
+    "./src/Index.tsx",
     "./test/components/HelloWorldTest.tsx"
   ],
   "exclude": [

@@ -1,6 +1,6 @@
 language: node_js
 node_js:
- - "5.11"
+- '5.11'
 install:
 - npm install
 - npm run typings
@@ -9,3 +9,13 @@ script:
 - npm test
 - npm run coveralls
 - npm run bithound
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  buildpack: nodejs
+  api_key:
+    secure: MY0CHRvQNUk+/AYe7hwYvYO84QWfmFDG/5+oSDZPindGSMNQfhDo+0/AbD5fsV87GeyD87FA92lGHGW73WwsBh/c6I2wnxcuhZ86zIZrVIGTIQVac42WJplSWyv3vfb9HWK09gvanXLdqZbEDqLBnlYF/x45wWWxilqO4hPax8cUhIiol3WYINnPCz6FhRhl9tjdwlBRoaajsKXeZKA4O/+6JQbAn4Jiy3lOeDd8jRJRZAOP1oqcWMLl2pwZYlmLDmTxZu+S1etIKQqxXsvMmYVXsEooMOQUFQeamJU5tv+XOtsKGjwMslJe9P8yX2CW3FHa2q56BkliRdEYu+V73V2XExgWqWbgAetdz9/TeOdi06/7M8qdM6HAGvzLNmMnMalnsodCX7/0khbpFHDqS3HrcLZqO7mbUC/pEB9qsCWe75AAl1FslF4hmhh1Xc2QnYncZAOjNkT+/3uJRAZHf2h42310bwSO8xNcFZ9TyzxJDhfcYf6D9oPVAAvip/CVsk+/Oh/bUocc1nhck7i82abZFYxgNEKBeBmoIDXwm08bhX//tLD4AgPQrP6dkM8E+ZxLeHNVO9hy+CyxjjtqUqDYggTxx2JcX9TOmS5XfuyBf9QzCqjNXKjgXQcGKgQ2MfIV7hJ8IdGhieZY0LZ4hyE2M37+k9R36glYIk0/9/8=
+  app: glo-ci-demo
+  on:
+    branch: master
+    repo: GLO3112/ci-demo

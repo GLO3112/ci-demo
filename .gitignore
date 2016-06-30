@@ -3,6 +3,3 @@
 coverage
 node_modules
 typings
-
-dist
-dist_test

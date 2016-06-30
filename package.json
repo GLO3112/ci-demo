@@ -10,10 +10,14 @@
     "test": "rm -rf dist_test && tsc -p tsconfig.test.json && nyc ava \"dist_test/**/*Test.js\"",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "bithound": "bithound check git@github.com:GLO3112/ci-demo.git",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "clean": "rm -rf dist && rm -rf dist_test"
   },
   "author": "wfortin & vseguin",
   "license": "MIT",
+  "pre-commit": [
+    "clean"
+  ],
   "devDependencies": {
     "ava": "^0.15.2",
     "bithound": "^1.3.0",
@@ -24,6 +28,7 @@
     "gulp-sass": "^2.3.1",
     "http-server": "^0.9.0",
     "nyc": "^6.6.1",
+    "pre-commit": "^1.1.3",
     "react-addons-test-utils": "^15.1.0",
     "ts-loader": "^0.8.2",
     "typescript": "^1.8.10",

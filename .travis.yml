@@ -3,7 +3,7 @@ node_js:
  - "5.11"
 install:
 - npm install
-- npm typings
+- npm run typings
 script:
 - npm run build
 - npm test

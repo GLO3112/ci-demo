@@ -16,5 +16,5 @@ test('HelloWorld props are defined properly', t => {
         firstname="GLO-3112"
         lastname="WEB"/>);
 
-    t.is(wrapper.find('h1').text(), 'Hello GLO-3112 WEB!');
+    t.is(wrapper.find('h1').text(), 'HELLO GLO-3112 WEB!');
 });

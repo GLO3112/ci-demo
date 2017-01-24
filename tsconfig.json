@@ -8,8 +8,7 @@
     "outDir": "dist"
   },
   "files": [
-    "./typings/index.d.ts",
-    "./src/lib.d.ts"
+    "./typings/index.d.ts"
   ],
   "exclude": [
     "node_modules"

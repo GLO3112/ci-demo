@@ -1,9 +1,5 @@
 [![Travis master](https://img.shields.io/travis/GLO3112/ci-demo/master.svg?maxAge=2592000)](https://travis-ci.org/GLO3112/ci-demo)
 [![Coverage Status](https://coveralls.io/repos/github/GLO3112/ci-demo/badge.svg?branch=master)](https://coveralls.io/github/GLO3112/ci-demo?branch=master)
-[![bitHound Dependencies](https://www.bithound.io/github/GLO3112/ci-demo/badges/dependencies.svg)](https://www.bithound.io/github/GLO3112/ci-demo/master/dependencies/npm)
-[![bitHound Dependencies](https://www.bithound.io/github/GLO3112/ci-demo/badges/dependencies.svg)](https://www.bithound.io/github/GLO3112/ci-demo/master/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/GLO3112/ci-demo/badges/devDependencies.svg)](https://www.bithound.io/github/GLO3112/ci-demo/master/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/github/GLO3112/ci-demo/badges/code.svg)](https://www.bithound.io/github/GLO3112/ci-demo)
 
 # ci-demo
 

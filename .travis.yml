@@ -7,7 +7,6 @@ script:
 - npm run build
 - npm test
 - npm run coveralls
-- npm run bithound
 deploy:
   provider: heroku
   skip_cleanup: true

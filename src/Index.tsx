@@ -4,5 +4,5 @@ import {HelloWorld} from './components/HelloWorld'
 
 ReactDOM.render(<HelloWorld
         firstname="GLO-3112"
-        lastname="WEB"/>,
+        lastname="AI-POWERED WEB SCALE MACHINE LEARNING 4.0 INDUSTRY IOT"/>,
     document.getElementById('app'));

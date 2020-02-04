@@ -8,7 +8,7 @@ export interface HelloWorldProps {
 export class HelloWorld extends React.Component<HelloWorldProps, any> {
     render() {
         return <h1>
-            Hello {this.props.firstname} {this.props.lastname}!
+            Hello {this.props.firstname} {this.props.lastname} ...
         </h1>
     }
 }
